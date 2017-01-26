@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Roster</title>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/> 
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="panel-default">
+            <div class="panel-heading">
+                <h1>My NFL Roster</h1>
+            </div>
+            <div class="panel-body">
+                <div class="player-roster" id="players">
+                    <!-- Player info goes here! -->
+                </div>
+                <div class="player-form">
+                    <form onsubmit="addPlayer(event)">
+                        <div class="form-group">
+                            Player name:<br>
+                            <input type="text" class="form-control" name="player-name" required><br>
+                            Position:<br>
+                            <input type="text" class="form-control" name="player-position" required><br>
+                            Player number:<br> 
+                            <input type="text" class="form-control" name="player-number" required><br>
+                            <button type="submit">Add Player</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
